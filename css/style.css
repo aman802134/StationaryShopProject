@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Poppins:wght@100;200;300;500;600&family=Ubuntu:wght@300;500&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/* navigation bar code */
+.nav-container
+{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(87deg, rgba(243,243,243,1) 42%, rgba(20,123,238,1) 91%);
+    box-shadow:0px 1px 0px 0px rgb(0 0 0 / 30%);
+}
+.nav-container>.nav-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nav-container>.nav-logo>span
+{
+    font-size: 1.4rem;
+    font-family: "Fredoka";
+}
+.toggler
+{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow:1px 1px 2px 0px rgb(0 0 0 / 30%);
+    background-color: rgb(243, 238, 238);
+    margin-right: 10px;
+}
+.toggler i
+{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.navigation-links
+{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    display: none;
+}
+.navigation-links>.links-list
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.navigation-links>.links-list>.links-list-items
+{
+    margin: 0 25px;
+}
+.navigation-links>.links-list>.links-list-items>a
+{
+    font-size: 1.3rem;
+    font-family: "Fredoka";
+    letter-spacing: 1px;
+}
+.navigation-links>.links-list>.links-list-items>a:hover
+{
+    color: rgb(0, 123, 206);
+}
+.navigation-links>.navigation-btn
+{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navigation-links>.navigation-btn>button
+{
+    height: 2rem;
+    width: 5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: rgb(11, 11, 190);
+}
+.navigation-links>.navigation-btn>button>a
+{
+    font-size: 1.2rem;
+    font-family: "Fredoka";
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+.navigation-links>.navigation-btn>button:hover
+{
+    background-color: #0c0c5e;
+}
+
+/* navigation bar code */
+
+
+
+
+
+
+/* section code here */
+.section
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.section>.section-text
+{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 70px;
+    width: 50%;
+}
+.section>.section-text>h1
+{
+    letter-spacing: 1px;
+    font-family:"Fredoka";
+}
+.section>.section-text>h1>span
+{
+    color: #0000ff;
+}
+.section>.section-text>p
+{
+    margin: 50px 0;
+    text-align: justify;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: rgb(112, 109, 109);
+    font-family: "Fredoka";
+}
+.section>.section-text>.section-btn
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section>.section-text>.section-btn>button
+{
+    margin: 5px 10px;
+    width: 7rem;
+    height: 2.7rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.section>.section-text>.section-btn>.btn-1
+{
+    background-color: rgb(0, 0, 66);
+}
+.section>.section-text>.section-btn>.btn-1>a
+{
+    color: white;
+    font-family: "ubuntu";
+
+}
+.section>.section-text>.section-btn>.btn-2
+{
+    background-color:rgba(204, 204, 204, 0.808);
+    color: black;
+
+}
+.section>.section-text>.section-btn>.btn-2>a
+{
+    color: black;
+    font-family: "ubuntu";
+}
+.section>.section-text>.section-btn>.btn-1:hover
+{
+    background-color: #2121ad;
+}
+.section>.section-text>.section-btn>.btn-2:hover
+{
+    background-color: rgb(184, 182, 182);
+}
+
+/* section image code started from here */
+.section>.img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    border-radius: 5px;
+    height: 70vh;
+    margin: 10px 0px;
+}
+.section>.img>img
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    border-radius: 5px;
+    clip-path: ellipse(200px 200px);
+}
+/* section image code ednded  here */
+/* section code ended here */
+
+
+/* media querries started from here */
+/* navbar mediaquerries from here */
+@media screen and (max-width:1050px) {
+    .nav-container
+    {
+        display: block;
+        height: 100%;
+    }
+    .nav-container>.navigation-links
+    {
+        display: block;
+        text-align: center;
+    }
+    .nav-container>.navigation-links>.links-list
+    {
+        display: block;
+        justify-content: center;
+    }
+    .nav-container>.navigation-links>.links-list>.links-list-items
+    {
+        margin-top: 20px;
+    }
+    .navigation-btn
+    {
+        margin-top: 15px;
+    }
+    .nav-container>.toggler
+    {
+       position: absolute;
+       right: 0%;
+       top: 1%;
+    }
+    /* navbar mediaquerries till here */
+    /* section media querries from here */
+    .section>.section-text
+    {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .section>.img
+    {   
+        display: none;
+    }
+
+    /* section media querries till here */
+}
+@media screen and (max-width:400px){
+    .section>.section-btn>.btn-1
+    {
+        margin: 10px;
+    }
+}
+
+/* media querries ended  here */
+
+
+
+
+
+
+
+
+
